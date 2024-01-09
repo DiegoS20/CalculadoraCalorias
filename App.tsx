@@ -1,12 +1,14 @@
 import {StyleSheet} from 'react-native';
-import {SafeAreaView} from 'react-native-safe-area-context';
+import {SafeAreaView, SafeAreaProvider} from 'react-native-safe-area-context';
 import Routes from './src/routes';
 
 function App(): React.JSX.Element {
   return (
-    <SafeAreaView style={styles.container}>
-      <Routes />
-    </SafeAreaView>
+    <SafeAreaProvider>
+      <SafeAreaView style={styles.container}>
+        <Routes />
+      </SafeAreaView>
+    </SafeAreaProvider>
   );
 }
 

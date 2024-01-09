@@ -1,9 +1,12 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {Button, ButtonProps} from '@rneui/themed';
+import {StyleSheet, View} from 'react-native';
+
+const RaisedButton = (props: ButtonProps) => <Button raised {...props} />;
 
 export default function HomeScreen() {
   return (
     <View style={style.view}>
-      <Text style={{color: '#000'}}>Home screen</Text>
+      <RaisedButton title="Home screen" />
     </View>
   );
 }
