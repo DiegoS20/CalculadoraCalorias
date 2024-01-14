@@ -4,7 +4,7 @@ import Header from '../../components/Header';
 
 import styles from './styles';
 
-export default function AddFood() {
+export default function AddFoodScreen() {
   return (
     <View style={styles.screen}>
       <Header />
