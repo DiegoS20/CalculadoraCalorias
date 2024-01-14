@@ -27,5 +27,7 @@ export default StyleSheet.create({
     height: 40,
     borderRadius: 24,
   },
-  ['go-back-btn']: {},
+  ['go-back-btn']: {
+    marginLeft: -12,
+  },
 });
